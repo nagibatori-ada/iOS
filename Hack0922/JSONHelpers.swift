@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct OraculJSON: Codable{
+struct OracleJSON: Codable{
     let ticker: String
     let name: String
     let volume: String

@@ -28,7 +28,7 @@ struct DateAndData: Hashable, Identifiable{
     var date = 0
     var data = 0.0
 }
-struct OraculView: View {
+struct OracleView: View {
     public var token = "ZYpllhQnt7I8xirgkIXU5wy4cMr7GmeeRFiSkN7MvVURSxGsE1bWu778ZLIgOud1"
     @State private var pairs = [Currency]()
     
@@ -61,7 +61,7 @@ struct OraculView: View {
                 let (data, _) = try await URLSession.shared.data(from: url)
                 print(data)
                
-                let jsonFeed = try JSONDecoder().decode([OraculJSON].self, from: data)
+                let jsonFeed = try JSONDecoder().decode([OracleJSON].self, from: data)
                 print(jsonFeed)
                 for pair in jsonFeed{
                     pairs.append(Currency(ticker: pair.ticker, name: pair.name, volume: Int(pair.volume)!, volume_24h: Int(pair.volume_24h)!, currentPrice: Double(pair.price)!, history: makeList(20, maxLimit: Double(pair.price)!*1.1)))
@@ -145,7 +145,7 @@ struct OraculView: View {
                     loadData()
                 }
             }
-            .navigationTitle(Text("Oracul"))
+            .navigationTitle(Text("Oracle"))
             
         }
         
@@ -155,6 +155,6 @@ struct OraculView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        OraculView()
+        OracleView()
     }
 }

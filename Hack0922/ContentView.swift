@@ -12,10 +12,10 @@ struct ContentView: View {
     var body: some View {
         
         TabView(selection: $currentPage) {
-            OraculView()
+            OracleView()
                 .tabItem {
                 Image(systemName: "eye.fill")
-                Text("Oracul")
+                Text("Oracle")
             }
                 .tag(1)
             Launchpad()

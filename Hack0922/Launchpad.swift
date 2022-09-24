@@ -1,5 +1,5 @@
 //
-//  Oracul.swift
+//  Oracle.swift
 //  Hack0922
 //
 //  Created by Tema Sysoev on 24.09.2022.
@@ -106,7 +106,7 @@ struct Launchpad: View {
     }
 }
 
-struct Oracul_Previews: PreviewProvider {
+struct Launchpad_Previews: PreviewProvider {
     static var previews: some View {
         Launchpad()
     }
