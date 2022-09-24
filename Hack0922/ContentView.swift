@@ -2,24 +2,33 @@
 //  ContentView.swift
 //  Hack0922
 //
-//  Created by Tema Sysoev on 23.09.2022.
+//  Created by Tema Sysoev on 24.09.2022.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    @State private var currentPage = 0
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        
+        TabView(selection: $currentPage) {
+            OraculView()
+                .tabItem {
+                Image(systemName: "eye.fill")
+                Text("Oracul")
+            }
+                .tag(1)
+            Launchpad()
+                .tabItem {
+                Image(systemName: "pyramid.fill")
+                Text("Launchpad")
+            }
+                .tag(2)
         }
-        .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Content_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }

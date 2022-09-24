@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		E036056A28DE38DE00647205 /* Hack0922App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E036056928DE38DE00647205 /* Hack0922App.swift */; };
-		E036056C28DE38DE00647205 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E036056B28DE38DE00647205 /* ContentView.swift */; };
+		E036056C28DE38DE00647205 /* Oracul.swift in Sources */ = {isa = PBXBuildFile; fileRef = E036056B28DE38DE00647205 /* Oracul.swift */; };
 		E036056E28DE38E000647205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E036056D28DE38E000647205 /* Assets.xcassets */; };
 		E036057128DE38E000647205 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E036057028DE38E000647205 /* Preview Assets.xcassets */; };
 		E036057B28DE38E100647205 /* Hack0922Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E036057A28DE38E100647205 /* Hack0922Tests.swift */; };
 		E036058528DE38E100647205 /* Hack0922UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E036058428DE38E100647205 /* Hack0922UITests.swift */; };
 		E036058728DE38E100647205 /* Hack0922UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E036058628DE38E100647205 /* Hack0922UITestsLaunchTests.swift */; };
+		E0565CCE28DE8436002FA274 /* Launchpad.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0565CCD28DE8436002FA274 /* Launchpad.swift */; };
+		E0565CD028DE86C5002FA274 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0565CCF28DE86C5002FA274 /* ContentView.swift */; };
+		E0565CD228DF3860002FA274 /* JSONHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0565CD128DF3860002FA274 /* JSONHelpers.swift */; };
+		E0F00A1B28DF48D2004A8012 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F00A1A28DF48D2004A8012 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* Begin PBXFileReference section */
 		E036056628DE38DE00647205 /* Hack0922.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hack0922.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E036056928DE38DE00647205 /* Hack0922App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hack0922App.swift; sourceTree = "<group>"; };
-		E036056B28DE38DE00647205 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E036056B28DE38DE00647205 /* Oracul.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oracul.swift; sourceTree = "<group>"; };
 		E036056D28DE38E000647205 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E036057028DE38E000647205 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E036057628DE38E100647205 /* Hack0922Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hack0922Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +48,10 @@
 		E036058028DE38E100647205 /* Hack0922UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hack0922UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E036058428DE38E100647205 /* Hack0922UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hack0922UITests.swift; sourceTree = "<group>"; };
 		E036058628DE38E100647205 /* Hack0922UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hack0922UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E0565CCD28DE8436002FA274 /* Launchpad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launchpad.swift; sourceTree = "<group>"; };
+		E0565CCF28DE86C5002FA274 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E0565CD128DF3860002FA274 /* JSONHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHelpers.swift; sourceTree = "<group>"; };
+		E0F00A1A28DF48D2004A8012 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +103,11 @@
 			isa = PBXGroup;
 			children = (
 				E036056928DE38DE00647205 /* Hack0922App.swift */,
-				E036056B28DE38DE00647205 /* ContentView.swift */,
+				E0565CCF28DE86C5002FA274 /* ContentView.swift */,
+				E036056B28DE38DE00647205 /* Oracul.swift */,
+				E0F00A1A28DF48D2004A8012 /* DetailView.swift */,
+				E0565CD128DF3860002FA274 /* JSONHelpers.swift */,
+				E0565CCD28DE8436002FA274 /* Launchpad.swift */,
 				E036056D28DE38E000647205 /* Assets.xcassets */,
 				E036056F28DE38E000647205 /* Preview Content */,
 			);
@@ -143,6 +155,8 @@
 			dependencies = (
 			);
 			name = Hack0922;
+			packageProductDependencies = (
+			);
 			productName = Hack0922;
 			productReference = E036056628DE38DE00647205 /* Hack0922.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +229,8 @@
 				Base,
 			);
 			mainGroup = E036055D28DE38DE00647205;
+			packageReferences = (
+			);
 			productRefGroup = E036056728DE38DE00647205 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +273,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E036056C28DE38DE00647205 /* ContentView.swift in Sources */,
+				E036056C28DE38DE00647205 /* Oracul.swift in Sources */,
+				E0F00A1B28DF48D2004A8012 /* DetailView.swift in Sources */,
 				E036056A28DE38DE00647205 /* Hack0922App.swift in Sources */,
+				E0565CD028DE86C5002FA274 /* ContentView.swift in Sources */,
+				E0565CCE28DE8436002FA274 /* Launchpad.swift in Sources */,
+				E0565CD228DF3860002FA274 /* JSONHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +445,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,6 +475,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
