@@ -18,9 +18,10 @@ struct OracleJSON: Codable{
 
 struct LaunchpadJSON: Codable{
     let id: Int
-    let asset_to: AssetJSON
-    let asset_from: AssetJSON
-    let ratio: String
+    let asset_b: AssetJSON
+    let asset_a: AssetJSON
+    let weight_a: String
+    let weight_b: String
 }
 struct AssetJSON: Codable{
     let id: Int

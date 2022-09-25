@@ -24,7 +24,7 @@ struct Asset:Hashable{
 struct Launchpad: View {
     public var token = "ZYpllhQnt7I8xirgkIXU5wy4cMr7GmeeRFiSkN7MvVURSxGsE1bWu778ZLIgOud1"
     @State private var pairs = [Pair]()
-    
+    @Environment(\.openURL) var openURL
     private func loadData(){
         pairs = [Pair]()
         Task{
@@ -43,7 +43,7 @@ struct Launchpad: View {
                 let jsonFeed = try JSONDecoder().decode([LaunchpadJSON].self, from: data)
                 print(jsonFeed)
                 for pair in jsonFeed{
-                    pairs.append(Pair(id: pair.id, assetFrom: Asset(id: pair.id, name: pair.asset_from.name, ticker: pair.asset_from.ticker, volume_24h: pair.asset_from.volume_24h), assetTo: Asset(id: pair.id, name: pair.asset_to.name, ticker: pair.asset_to.ticker, volume_24h: pair.asset_to.volume_24h), ratio: Double(pair.ratio)!))
+                    pairs.append(Pair(id: pair.id, assetFrom: Asset(id: pair.id, name: pair.asset_a.name, ticker: pair.asset_a.ticker, volume_24h: pair.asset_a.volume_24h), assetTo: Asset(id: pair.id, name: pair.asset_b.name, ticker: pair.asset_b.ticker, volume_24h: pair.asset_b.volume_24h), ratio: Double(pair.weight_a)!/Double(pair.weight_b)!))
                 }
             }
          catch {
@@ -91,6 +91,15 @@ struct Launchpad: View {
                                 .frame(width: 50, alignment: .trailing)
                                 
                         }
+                        
+                        Button(action: {
+                            openURL(URL(string: "https://www.apple.com")!)
+                        }, label: {
+                            Image(systemName: "arrow.left.arrow.right")
+                        })
+                        .padding(.all, 5)
+                      
+                        .buttonStyle(.borderedProminent)
                         
                     }
                 }
