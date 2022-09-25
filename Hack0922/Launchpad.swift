@@ -93,7 +93,7 @@ struct Launchpad: View {
                         }
                         
                         Button(action: {
-                            openURL(URL(string: "https://www.apple.com")!)
+                            openURL(URL(string: "http://18.207.243.215:3000/")!)
                         }, label: {
                             Image(systemName: "arrow.left.arrow.right")
                         })
